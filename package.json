@@ -1,0 +1,30 @@
+{
+  "name": "koa-es6-rest-api",
+  "version": "1.0.0",
+  "description": "Starter project for an ES6 RESTful Express API",
+  "main": "index.js",
+  "repository": "https://github.com/MAKOSCAFEE/koa-es6-rest-api",
+  "author": "Barnabas Makonda",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "dev": "nodemon -w src --exec babel-node src",
+    "build": "babel src -s -D -d dist",
+    "start": "node dist",
+    "prestart": "npm run -s build",
+    "test": "eslint src"
+  },
+  "dependencies": {
+    "koa": "^2.7.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "nodemon": "^1.18.11"
+  },
+  "babel": {
+    "presets": [
+      "env"
+    ]
+  }
+}
