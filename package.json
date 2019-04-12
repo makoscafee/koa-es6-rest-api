@@ -11,11 +11,12 @@
     "dev": "nodemon -w src --exec babel-node src",
     "build": "babel src -s -D -d dist",
     "start": "node dist",
-    "prestart": "npm run -s build",
+    "prestart": "yarn -s build",
     "test": "eslint src"
   },
   "dependencies": {
     "@koa/cors": "^3.0.0",
+    "got": "^9.6.0",
     "koa": "^2.7.0",
     "koa-logger": "^3.2.0"
   },
